@@ -11,7 +11,8 @@ public class Main {
             System.out.println("1. Add Student");
             System.out.println("2. View Student ");
             System.out.println("3. Delete Student ");
-            System.out.println("4. Exit");
+            System.out.println("4. Search Student by Name ");
+            System.out.println("5. Exit");
             System.out.println("Enter Choice");
 //            int choice = sc.nextInt();
             int choice = Integer.parseInt(sc.nextLine());
@@ -41,7 +42,15 @@ public class Main {
                     int deleteId=Integer.parseInt(sc.nextLine());
                     manager.deleteStudent(deleteId);
                     break;
+
+
                 case 4:
+                    System.out.println("Search Student Name ");
+                    String searchName =sc.nextLine();
+                    manager.searchStudentbyname(searchName);
+                    break;
+
+                    case 5:
                     System.out.println("exiting ");
                     sc.close();
                     return;

@@ -19,6 +19,12 @@ public class Student {
     public int getId() {
         return id;
     }
+    public String getname (){
+
+        return name;
+
+    }
+
 //    public String getName(){
 //        return name;
 //    }
